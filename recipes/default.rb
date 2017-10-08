@@ -21,4 +21,5 @@ end
 
 include_recipe 'base::hostname'
 include_recipe 'base::users'
+include_recipe 'base::motd'
 
