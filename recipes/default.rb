@@ -14,6 +14,11 @@ selinux_state "SELinux #{node['selinux']['status'].capitalize}" do
   action node['selinux']['status'].downcase.to_sym
 end
 
+service 'iptables' do
+  supports :status => true, :restart => true, :reload => true
+  action [:stop, :disable]
+end
+
 include_recipe 'base::hostname'
 include_recipe 'base::users'
 
