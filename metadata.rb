@@ -1,6 +1,6 @@
 name 'base'
 maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer_email 'nferna13@outlook.com'
 license 'All Rights Reserved'
 description 'Installs/Configures base'
 long_description 'Installs/Configures base'
@@ -11,15 +11,15 @@ chef_version '>= 12.21.14' if respond_to?(:chef_version)
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/base/issues'
+issues_url 'https://github.com/nfernal/base/issues'
 
-# The `source_url` points to the development reposiory for this cookbook.  A
+# The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/base'
+source_url 'https://github.com/nfernal/base'
 
 depends 'hostname'
 depends 'selinux'
 depends 'users'
-depends 'iptables'
+
