@@ -22,3 +22,4 @@ chef_version '>= 12.21.14' if respond_to?(:chef_version)
 depends 'hostname'
 depends 'selinux'
 depends 'users'
+depends 'iptables'
