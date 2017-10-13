@@ -9,7 +9,12 @@ users_manage 'devops' do
   action [:remove, :create]
 end
 
-%w(devops).each do |group|
+users_manage 'go' do
+  group_id 630
+  action [:remove, :create]
+end
+
+%w(devops go).each do |group|
   users_manage group do
     action [:remove, :create]
   end
