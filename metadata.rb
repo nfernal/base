@@ -22,4 +22,5 @@ source_url 'https://github.com/nfernal/base'
 depends 'hostname'
 depends 'selinux'
 depends 'users'
-
+depends 'aws_cw_monitoring'
+depends 'cloudwatch-logs'

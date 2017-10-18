@@ -1,5 +1,15 @@
+
+
  __________________ _     ____________     ________   _____________   _________________________   _______
  |  |  |_____|     \|     |_____/     |    |_____| \  |  ____ |  | \  |_____|_____|_____/ |  | \  |  ____
  |  |  |     |_____/|_____|    \|_____|    |_____|  \_|_____|_|__|  \_|_____|_____|    \__|__|  \_|_____|
 
+#######################################
+This service is restricted to authorized users only. All activities on this system are logged.
+Unauthorized access will be fully investigated and reported to the appropriate law enforcement agencies.
+FQDN: <%= node['set_fqdn'] %>
+AMI: <%= @aws_metadata['ami-id'] %>
+TYPE: <%= @aws_metadata['instance-type'] %>
+ID: <%= @aws_metadata['instance-id'] %>
+#######################################
 

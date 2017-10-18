@@ -10,6 +10,8 @@ link '/usr/local/bin/ruby' do
   link_type :symbolic
 end
 
+include_recipe 'base::hostname'
+
 selinux_state "SELinux #{node['selinux']['status'].capitalize}" do
   action node['selinux']['status'].downcase.to_sym
 end
@@ -19,6 +21,9 @@ service 'iptables' do
   action [:stop, :disable]
 end
 
-include_recipe 'base::hostname'
 include_recipe 'base::users'
 include_recipe 'base::motd'
+include_recipe 'aws_cw_monitoring::default'
+include_recipe 'cloudwatch-logs::default'
+
+include_recipe 'base::cleanup'
