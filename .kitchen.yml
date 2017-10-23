@@ -20,7 +20,7 @@ driver:
 platforms:
   - name: CentOS_69
     driver:
-      image_id: ami-bee92dc6
+      image_id: ami-09884471
       instance_type: t2.small
       associate_public_ip: true
       iam_profile_name: main_infra

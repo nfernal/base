@@ -23,7 +23,5 @@ end
 
 include_recipe 'base::users'
 include_recipe 'base::motd'
-include_recipe 'aws_cw_monitoring::default'
-include_recipe 'cloudwatch-logs::default'
-
+include_recipe 'base::additional_cloudwatch_metrics'
 include_recipe 'base::cleanup'
