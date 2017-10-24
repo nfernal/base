@@ -1,6 +1,6 @@
 #
 # Cookbook:: base
-# Recipe:: additional_cloudwatch_metrics
+# Recipe:: cloudwatch_metrics
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 

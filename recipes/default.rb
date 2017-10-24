@@ -23,5 +23,6 @@ end
 
 include_recipe 'base::users'
 include_recipe 'base::motd'
-include_recipe 'base::additional_cloudwatch_metrics'
+include_recipe 'base::cloudwatch_metrics'
+include_recipe 'cloudwatch-logs::default'
 include_recipe 'base::cleanup'
